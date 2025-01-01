@@ -21,6 +21,7 @@
                     <a href="/" class="hover:text-gray-400">Home</a>
                     <a href="/about" class="hover:text-gray-400">About</a>
                     <a href="/contact" class="hover:text-gray-400">Contact</a>
+                    <a href="/computers" class="hover:text-gray-400">Computers</a>
                 </div>
             </nav>
         </div>
@@ -29,7 +30,7 @@
             <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
                 <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
                     <header class="grid grid-cols-1 items-center gap-2 py-10 text-center">
-                        <span class="text-xl">Abdulrhman Aliyan</span>
+                        <h1 class="text-sm">Abdulrhman Aliyan</h1>
                     </header>
 
                     <main class="mt-6 text-center">

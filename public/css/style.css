@@ -36,15 +36,6 @@ abbr:where([title]) {
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: inherit;
-    font-weight: inherit;
-}
 a {
     color: inherit;
     text-decoration: inherit;
@@ -517,6 +508,10 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
+.text-2xl {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+}
 .font-semibold {
     font-weight: 600;
 }
@@ -564,7 +559,7 @@ video {
 }
 .drop-shadow-\[0px_4px_34px_rgba\(0\2c 0\2c 0\2c 0\.25\)\] {
     --tw-drop-shadow: drop-shadow(0px 4px 34px rgba(0, 0, 0, 0.25));
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    filter: var(--tw-blur) var(--tw-brightness) var (--tw-contrast)
         var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
         var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -760,4 +755,105 @@ nav a:last-child {
 nav a:hover {
     color: #ff2d20;
     transform: scale(1.1);
+}
+
+.computers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.computers-table th, .computers-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.computers-table th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.computers-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.computers-table tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.computers-table a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.computers-table a:hover {
+    color: #FF2D20;
+    transform: scale(1.1);
+}
+
+.highlight {
+    background-color: #f0f0f0;
+}
+.view-icon {
+    cursor: pointer;
+}
+.computers-table tbody tr {
+    cursor: pointer;
+}
+.computers-table tbody tr:hover {
+    color: #e74c3c !important; /* More pleasant red */
+    font-weight: bold;
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Transition effect */
+}
+
+.computers-table tbody tr:hover .view-icon {
+    color: #e74c3c !important;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-width: 2px;
+}
+
+.form div {
+    margin-bottom: 15px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.125rem;
+    border-width: 2px;
+    margin-bottom: 1rem;
+}
+
+.form button {
+    padding: 0.5rem 1rem;
+    background-color: #ff2d20; /* Default color for submit button red */
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #c0392b; /* Darker reddish color on hover */
 }
