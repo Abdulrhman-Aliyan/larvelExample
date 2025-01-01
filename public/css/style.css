@@ -857,3 +857,17 @@ nav a:hover {
 .form button:hover {
     background-color: #c0392b; /* Darker reddish color on hover */
 }
+
+.create-computer-btn {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin: 20px 0; /* Adjusted margin */
+}
+
+.create-computer-btn:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
+}

@@ -4,8 +4,7 @@
 
 @section('content')
 
-<h1>Computers</h1>
-<p>This is the Computers page</p>
+<h1 class="page-title">Computers</h1>
 
 <a href="{{ url('computers/create') }}" class="btn btn-primary create-computer-btn">Create Computer</a>
 
@@ -77,13 +76,16 @@
 
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <style>
+    .page-title {
+        margin-bottom: 20px; /* Added margin to the h1 element */
+    }
     .create-computer-btn {
         background-color: #d9534f;
         border-color: #d43f3a;
         color: white;
         padding: 10px 20px;
         border-radius: 3px;
-        margin-top: 50px !important; 
+        margin: 20px 0; /* Adjusted margin */
     }
     .create-computer-btn:hover {
         background-color: #c9302c;
