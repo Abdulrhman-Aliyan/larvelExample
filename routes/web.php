@@ -1,14 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StaticController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/', [StaticController::class, 'index']);
+Route::get('/about',[StaticController::class]);
+Route::get('/portfolio',);
+Route::get('/contact',);
 
 /* Route::get('/store', function () {
     $filter = request('style');
