@@ -86,6 +86,7 @@
         padding: 10px 20px;
         border-radius: 3px;
         margin: 20px 0; /* Adjusted margin */
+        display: inline-block; /* Ensure the button is displayed correctly */
     }
     .create-computer-btn:hover {
         background-color: #c9302c;
